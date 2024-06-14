@@ -4,7 +4,7 @@
 A React-based weather application that displays current weather information for top cities in India. This project uses the OpenWeather API to fetch weather data.
 
 
-##Try Website
+## Try Website
 https://weather-app-y5zv.onrender.com/
 
 
