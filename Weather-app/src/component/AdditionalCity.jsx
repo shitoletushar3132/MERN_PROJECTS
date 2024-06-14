@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { getWeatherInfo } from "../helper";
 
-
 export default function AdditionalCity() {
   const topCitiesInIndia = [
     "Mumbai",
@@ -15,7 +14,7 @@ export default function AdditionalCity() {
     "Jaipur",
     "Surat",
     "Nashik",
-    "Solapur"
+    "Solapur",
   ];
 
   const [weatherData, setWeatherData] = useState(
@@ -50,7 +49,9 @@ export default function AdditionalCity() {
             className="shadow-inner bg-white border-2 p-4 px-10 text-2xl w-full m-2 rounded-lg flex justify-between"
           >
             <span className="font-semibold">{city}</span>
-            <span>{temp !== null ? `${temp} °C` : "Loading..."}</span>
+            <span>
+              {temp !== null ? `${temp} °C` : "Loading..."}
+            </span>
           </div>
         ))}
       </div>
