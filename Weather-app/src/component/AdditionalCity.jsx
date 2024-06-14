@@ -14,6 +14,8 @@ export default function AdditionalCity() {
     "Ahmedabad",
     "Jaipur",
     "Surat",
+    "Nashik",
+    "Solapur"
   ];
 
   const [weatherData, setWeatherData] = useState(
@@ -41,7 +43,7 @@ export default function AdditionalCity() {
 
   return (
     <>
-      <div className="bg-white shadow-xl grid grid-cols-1 gap-3 place-items-center md:grid-cols-2 lg:grid-cols-3 lg:my-10 p-5">
+      <div className="bg-[#64748b] shadow-lg grid grid-cols-1 gap-3 p-5 place-items-center md:grid-cols-2 lg:grid-cols-3 lg:my-5  md:my-3 md:p-3 lg:p-2 rounded-lg">
         {weatherData.map(({ city, temp }, index) => (
           <div
             key={index}
