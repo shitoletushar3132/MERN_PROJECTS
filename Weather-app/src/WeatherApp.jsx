@@ -20,8 +20,11 @@ export default function WeatherApp() {
       >
         <div className="absolute inset-0 bg-gray-900 opacity-50 blur-lg"></div>
         <div className="w-full relative z-10 text-white">
-          <h2 className="text-xl font-semibold fixed top-0 right-2">
-            <i>Weather App by vicky</i>
+          <h2 className="text-xl font-semibold relative -top-14 px-3">
+            <i>
+              Created by{" "}
+              <a href="http://github.com/shitoletushar3132" className="text-[#172554] underline">Tushar</a>
+            </i>
           </h2>
           <div className="w-full">
             <SearchBox updateInfo={updateInfo} />
