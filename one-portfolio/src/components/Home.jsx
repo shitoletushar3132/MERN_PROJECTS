@@ -60,9 +60,10 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 8 years of experience building and desgining software.
+            I have 2 years of experience building and desigining software.
             Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+            JavaScript, Node Js, React Js, Express, Tailwind, Next JS and
+            MongoDB.
           </p>
 
           <div>
@@ -94,7 +95,7 @@ const Home = () => {
                 <li
                   key={id}
                   className={
-                    "flex rounded-lg mt-3 justify-between items-center h-10 px-4 hover:scale-125 hover:bg-gray-700 duration-300" 
+                    "flex rounded-lg mt-3 justify-between items-center h-10 px-4 hover:scale-125 hover:bg-gray-700 duration-300"
                   }
                 >
                   <a
