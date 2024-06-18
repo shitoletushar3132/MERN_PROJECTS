@@ -18,7 +18,11 @@ function Contact(props) {
           <p className="py-6">Submit the form below to get in touch with me</p>
         </div>
         <div className="flex justify-center items-center">
-          <form action="" className="flex flex-col w-full md:w-1/2 ">
+          <form
+            action="https://getform.io/f/rbeqwgmb"
+            method="POST"
+            className="flex flex-col w-full md:w-1/2 "
+          >
             <input
               type="text"
               name="name"
