@@ -8,9 +8,19 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-
+import mongodb from "../assets/monogo.png";
+import node from "../assets/node.png";
+import java from "../assets/java.png";
+import python from "../assets/python.png";
+import bootstrap from "../assets/bootstrap.png";
+import database from "../assets/database.png";
+import sql from "../assets/sql.png";
 const Experience = () => {
   const techs = [
+    { id: 10, src: java, title: "Java", style: "shadow-[#F44336]" },
+    { id: 11, src: python, title: "Python", style: "shadow-[#0277BD]" },
+    { id: 13, src: database, title: "DataBase", style: "shadow-[#7C4DFF]" },
+
     {
       id: 1,
       src: html,
@@ -30,6 +40,12 @@ const Experience = () => {
       style: "shadow-yellow-500",
     },
     {
+      id: 12,
+      src: bootstrap,
+      title: "BootStrap",
+      style: "shadow-[#7C4DFF]",
+    },
+    {
       id: 4,
       src: reactImage,
       title: "React",
@@ -43,15 +59,21 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
+      src: node,
+      title: "Node Js",
+      style: "shadow-emerald-800",
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: sql,
+      title: "Sql",
+      style: "shadow-[#DCD5F2]",
+    },
+    {
+      id: 9,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
     },
     {
       id: 8,
