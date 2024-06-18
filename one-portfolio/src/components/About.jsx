@@ -1,6 +1,7 @@
 import React from "react";
 
 const About = () => {
+  const LiStyle = "p-4 ";
   return (
     <div
       name="about"
@@ -13,24 +14,48 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+        <p className="text-xl mt-10 ">
+          <span className="block font-bold underline mb-2">
+            Career Objective
+          </span>
+          <div className="p-4">
+            As a passionate <i className="text-sky-500">MERN Stack Developer,</i> I aim to leverage my
+            expertise in MongoDB, Express.js, React, and Node.js to build
+            dynamic and responsive web applications. With a commitment to clean
+            code and efficient design, I seek to contribute to innovative
+            projects that push the boundaries of web development.
+          </div>
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          <span className="block font-bold underline mb-2">Education</span>
+          <ul>
+            <li className={LiStyle}>
+              <p>PDEA's College Of Engineering Manjari, pune</p>
+              <p className="text-amber-500"> Jun.2021 - May.2025</p>
+              <p>
+                Bachelor of Engineering in Computer Science - CGPA : 8.33/10
+              </p>
+            </li>
+            <li className={LiStyle}>
+              <p>
+                Shri Gopinath Secondary Higher Secondary & Technical School,
+                Varvand
+              </p>
+              <p className="text-amber-500">Jan.2020 - May.2021</p>
+              <p>CLASS 12th : 87.20%</p>
+            </li>
+            <li className={LiStyle}>
+              <p>
+                Shri Gopinath Secondary Higher Secondary & Technical School,
+                Varvand
+              </p>
+              <p className="text-amber-500">Jan.2018 - May.2019</p>
+              <p>CLASS 10th - 82.30%</p>
+            </li>
+          </ul>
         </p>
       </div>
     </div>
