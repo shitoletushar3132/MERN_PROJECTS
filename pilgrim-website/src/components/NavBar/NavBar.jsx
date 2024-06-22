@@ -37,7 +37,7 @@ const NavBar = () => {
     <div className="w-full h-20 sticky top-0 left-0 p-4 bg-gradient-primary z-10">
       <div className="h-full flex justify-between items-center text-white">
         <div className="">
-          <NavLink to={"/home"}>
+          <NavLink to={"/"}>
             <h1 className="text-3xl text-[#FFFFFF]">Pilgrim Journey</h1>
           </NavLink>
         </div>
