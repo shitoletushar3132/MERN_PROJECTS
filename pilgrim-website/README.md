@@ -1,4 +1,4 @@
-# Sacred Journeys: Website Design and Development
+# Pilgrim Journey: Website Design and Development
 
 ## Introduction
 Sacred Journeys is a website designed to help people plan trips to various religious sites. It aims to be user-friendly, informative, and visually appealing while respecting and celebrating different religious traditions.
