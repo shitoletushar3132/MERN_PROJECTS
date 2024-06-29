@@ -26,10 +26,10 @@ export default function SearchBox({ updateInfo }) {
   };
 
   return (
-    <div className="SearchBox w-full flex flex-col items-center justify-center p-4">
+    <div className="SearchBox w-full flex flex-col items-center justify-center p-4 md:flex-row">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md flex flex-col items-center bg-white bg-opacity-80 p-6 rounded-lg shadow-lg space-y-4"
+        className="w-full max-w-md flex flex-col items-center  p-6 rounded-lg space-y-4 "
       >
         <TextField
           id="city"

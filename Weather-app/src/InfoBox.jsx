@@ -14,10 +14,10 @@ import AirIcon from "@mui/icons-material/Air";
 export default function InfoBox({ info }) {
   return (
     <div className="InfoBox w-full flex justify-center py-4">
-      <div className="cardContainer w-full max-w-3xl bg-white rounded-lg shadow-lg overflow-hidden mx-2">
+      <div className="cardContainer w-full max-w-xl bg-white rounded-lg shadow-lg overflow-hidden mx-2">
         <Card sx={{ maxWidth: "100%", borderRadius: 2, boxShadow: 3 }}>
           <CardMedia
-            sx={{ height: 200 }}
+            sx={{ height: 150 }}
             image={
               ImageSet(info.humidity, info.temp, info.clouds, info.windSpeed)
                 .img

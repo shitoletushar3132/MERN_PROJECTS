@@ -13,7 +13,7 @@ export default function WeatherApp() {
   return (
     <>
       <div
-        className="bg-cover bg-center w-full h-screen flex flex-col justify-center items-center"
+        className="bg-cover bg-center w-full flex flex-col justify-center items-center"
         style={{
           backgroundImage: `url("https://images.pexels.com/photos/4992819/pexels-photo-4992819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
         }}
