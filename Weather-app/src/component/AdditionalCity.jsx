@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getWeatherInfo } from "../helper";
+import { getWeatherInfo } from "./helper";
 
 export default function AdditionalCity() {
   const topCitiesInIndia = [
@@ -42,16 +42,17 @@ export default function AdditionalCity() {
 
   return (
     <>
-      <div className="bg-[#64748b] shadow-lg grid grid-cols-1 gap-3 p-5 place-items-center md:grid-cols-2 lg:grid-cols-3 lg:my-5  md:my-3 md:p-3 lg:p-2 rounded-lg">
+      <div
+        className="bg-[#64748b] shadow-lg grid grid-cols-1 gap-3 p-5 place-items-center md:grid-cols-2 lg:grid-cols-3 lg:my-5  md:my-3 md:p-3 lg:p-2 rounded-lg"
+        name="additional_data"
+      >
         {weatherData.map(({ city, temp }, index) => (
           <div
             key={index}
             className="shadow-inner bg-white border-2 p-4 px-10 text-2xl w-full m-2 rounded-lg flex justify-between"
           >
             <span className="font-semibold">{city}</span>
-            <span>
-              {temp !== null ? `${temp} °C` : "Loading..."}
-            </span>
+            <span>{temp !== null ? `${temp} °C` : "Loading..."}</span>
           </div>
         ))}
       </div>

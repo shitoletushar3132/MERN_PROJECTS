@@ -1,19 +1,22 @@
 import SearchBox from "./SearchBox";
 import InfoBox from "./InfoBox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { dataInti } from "./init";
-import "./WeatherApp.css";
-import AdditionalCity from "./component/AdditionalCity";
+import NavBar from "./NavBar";
+import AdditionalCity from "./AdditionalCity";
+
 export default function WeatherApp() {
   const [weatherInfo, setWeatherInfo] = useState(dataInti);
 
   let updateInfo = (info) => {
     setWeatherInfo(info);
   };
+
   return (
     <>
+      <NavBar />
       <div
-        className="bg-cover bg-center w-full flex flex-col justify-center items-center"
+        className="bg-cover bg-center w-full flex flex-col justify-center items-center pt-10"
         style={{
           backgroundImage: `url("https://images.pexels.com/photos/4992819/pexels-photo-4992819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
         }}

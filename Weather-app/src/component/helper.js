@@ -71,4 +71,5 @@ let getWeatherInfo = async (city) => {
     throw err;
   }
 };
+
 export { ImageSet, getWeatherInfo };

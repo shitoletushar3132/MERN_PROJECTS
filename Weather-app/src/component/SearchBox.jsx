@@ -1,7 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import "./SearchBox.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getWeatherInfo } from "./helper";
 
 export default function SearchBox({ updateInfo }) {
@@ -25,13 +25,39 @@ export default function SearchBox({ updateInfo }) {
     }
   };
 
+  useEffect(() => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+          console.log(latitude, longitude);
+          let url = await fetch(
+            `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=508e65af6d019e55904d0b72c1d2d907`
+          );
+          let dataJson = await url.json();
+          let cityName = dataJson[0].name;
+          if (cityName) {
+            let info = await getWeatherInfo(cityName);
+            updateInfo(info);
+          }
+        },
+        (error) => {
+          console.error("Error getting location:", error);
+        }
+      );
+    } else {
+      console.log("Geolocation not available");
+    }
+  }, []);
+
   return (
-    <div className="SearchBox w-full flex flex-col items-center justify-center p-4 md:flex-row">
+    <div className="SearchBox w-full flex flex-col items-center justify-center p-1 md:flex-row" name="home">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md flex flex-col items-center  p-6 rounded-lg space-y-4 "
       >
-        <TextField
+        <TextField 
           id="city"
           label="City Name"
           variant="outlined"
