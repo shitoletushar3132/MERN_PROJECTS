@@ -16,11 +16,11 @@ function NavBar() {
     },
   ];
   return (
-    <div className=" fixed z-50 w-full h-12 flex justify-between px-2 items-center bg-slate-400 md:px-3">
+    <div className=" fixed z-50 w-full h-12 flex justify-between px-2 items-center bg-slate-400 text-sm md:px-3 md:text-lg">
       <div className="font-bold text-lg cursor-pointer">
         <a href="/home"></a>WeatherWise
       </div>
-      <div className="flex">
+      <div className="flex text-sm sm:text-sm">
         <ul className="flex ">
           {NavLinks.map(({ id, link }) => (
             <li

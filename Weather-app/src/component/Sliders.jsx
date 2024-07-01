@@ -38,7 +38,7 @@ function Sliders({ cityName }) {
       <div className="flex overflow-x-scroll snap-x">
         {data.map((entry, index) => (
           <div
-            className="bg-white m-3 text-black text-center rounded-lg py-3 min-w-72 snap-center md: min-w-96"
+            className="bg-white m-3 text-black text-center rounded-lg py-3 min-w-72 snap-center md:min-w-96"
             key={index}
           >
             <div className="flex justify-start px-3">
