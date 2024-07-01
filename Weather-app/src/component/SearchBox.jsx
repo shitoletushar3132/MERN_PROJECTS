@@ -42,12 +42,15 @@ export default function SearchBox({ updateInfo }) {
             updateInfo(info);
           }
         },
-        (error) => {
+        async (error) => {
           console.error("Error getting location:", error);
+          let info = await getWeatherInfo("pune");
+          updateInfo(info);
         }
       );
     } else {
       console.log("Geolocation not available");
+      
     }
   }, []);
 

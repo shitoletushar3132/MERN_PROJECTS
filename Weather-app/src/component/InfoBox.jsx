@@ -10,7 +10,7 @@ import ThunderstormIcon from "@mui/icons-material/Thunderstorm";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import AirIcon from "@mui/icons-material/Air";
-import PreviousWeather from "./PreviousWeather";
+import Sliders from "./Sliders";
 
 export default function InfoBox({ info }) {
   return (
@@ -64,7 +64,7 @@ export default function InfoBox({ info }) {
         </div>
       </div>
       <div className="m-2">
-        <PreviousWeather cityName={info.city} />
+        <Sliders cityName={info.city} />
       </div>
     </>
   );
